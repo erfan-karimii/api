@@ -6,7 +6,7 @@ from rest_framework.authentication import SessionAuthentication
 
 class PostListView(ListCreateAPIView):
 	queryset = Post.objects.all()
-	serializer_class = PostSerilizers
+	# serializer_class = PostSerilizers
 	authentication_classes =(SessionAuthentication,)
 
 
